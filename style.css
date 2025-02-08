@@ -19,23 +19,32 @@ header h1 {
     color: #ffffff; /* White text for header */
 }
 
+/* Navigation Styles */
 header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove unnecessary padding */
+    margin: 0; /* Remove unnecessary margin */
+    display: flex; /* Align items in a horizontal row */
+    gap: 20px; /* Add even spacing between navigation links */
+    justify-content: center; /* Center the navigation links */
+}
+
+header nav ul li {
+    display: inline-block; /* Ensure each link is inline */
+    margin: 0; /* Remove any default margins */
 }
 
 header nav a {
-    text-decoration: none;
-    color: #58a6ff; /* Light blue link color in dark mode */
-    font-weight: 500;
+    text-decoration: none; /* Remove underline from links */
+    color: #58a6ff; /* Light blue text color for dark mode */
+    font-size: 1rem; /* Adjust font size for clarity */
+    font-weight: 500; /* Make the font slightly bold */
+    padding: 5px 10px; /* Add padding around each link for spacing */
 }
 
 header nav a:hover {
-    color: #1fb6ff; /* Brighter hover color */
+    color: #1fb6ff; /* Brighter color on link hover */
+    border-bottom: 2px solid #1fb6ff; /* Add a hover underline effect */
 }
 
 /* Section Styles */
